@@ -1,8 +1,8 @@
-fit_mcmc.png: fit_mcmc.dat
-	python plot_mcmc.py 
+fig.png: data.dat
+	python plot.py 
 
-fit_mcmc.dat: fit_mcmc.x
-	./fit_mcmc.x > fit_mcmc.dat
+data.dat: solve.x
+	./solve.x > data.dat
 
-fit_mcmc.x: fit_mcmc.cpp
-	c++ fit_mcmc.cpp -o fit_mcmc.x
+solve.x: solve.cpp
+	c++ solve.cpp -o solve.x
