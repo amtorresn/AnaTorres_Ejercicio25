@@ -8,7 +8,6 @@ a = os.system("./solve.x > solve.dat")
 data = np.loadtxt("solve.dat")
 
 n = data.shape[0]//6
-print(n)
 
 t1_ex = data[0:n,0]
 y1_ex = data[0:n,1]
@@ -22,10 +21,8 @@ y2_im = data[3*n:4*n,1]
 
 t3_ex = data[4*n:5*n,0]
 y3_ex = data[4*n:5*n,1]
-print(y3_ex)
 t3_im = data[5*n:6*n,0]
 y3_im = data[5*n:6*n,1]
-print(y3_im)
 
 plt.figure(figsize=(14,4))
 
